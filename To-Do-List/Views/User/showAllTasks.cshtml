@@ -1,0 +1,29 @@
+﻿@model List<To_Do_List.Models.To_do_Element>
+
+
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+            <th>Title</th>
+            <th>Beschreibung</th>
+            <th>Type</th>
+    </tr>
+</thead>
+<tbody>
+    
+    @foreach(var a in Model){
+    <tr>
+                <td>@a.Id</td>
+                <td>@a.Title</td>
+                <td>@a.Description</td>
+                <td>@a.Type</td>
+                
+    </tr>
+
+    }
+</tbody>
+
+</table>
